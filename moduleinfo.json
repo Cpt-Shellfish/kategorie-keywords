@@ -1,0 +1,20 @@
+{
+    "name": "Kategorie Keywords",
+    "archiveName": "webknecht/kategorie-keywords",
+    "sourceDir": "new_files",
+    "version": "auto",
+    "shortDescription": "",
+    "description": "",
+    "developer": "Agentur Webknecht, Daniel Lonn",
+    "developerWebsite": "",
+    "website": "",
+    "category": "productivity",
+    "price": "free",
+    "modifiedCompatibility": [
+        "2.0.6.0"
+    ],
+    "require": {
+        "composer/autoload": "^1.1.0",
+        "robinthehood/modified-std-module": "^0.1.0"
+    }
+}
