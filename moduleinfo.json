@@ -4,10 +4,10 @@
     "sourceDir": "new_files",
     "version": "auto",
     "shortDescription": "",
-    "description": "",
+    "description": "Ist der Suchbegriff Bestandteil von Kategorie-Keywords werden zus&auml;tzlich zum regul&auml;ren Suchergebnis alle Artikel der betreffenden Kategorie gelistet. Optional werden ausserdem  die erfassten Kategorien oberhalb des Suchergebnisses platziert. <br />Bei bereits gew&auml;hlter Kategorie in der erweiterten Suche erfolgt kein Abgleich der Kategorie-Keywords.<br /><br />F&uuml;r folgende Zusatzfunktionen sind Template Anpassungen notwendig:</strong><br />- Anpassung der &Uuml;berschrift im Kategorie Listing Suchergebnis zu \"gefunden in folgenden Kategorien:\"<br />- Anzeige des Suchergebnisses in der Vorschau der Autocomplete Suche<br />(siehe Details in der Modul Bearbeitungsansicht)",
     "developer": "Agentur Webknecht, Daniel Lonn",
-    "developerWebsite": "",
-    "website": "",
+    "developerWebsite": "https://www.modified-multishop.de",
+    "website": "http://redmine.luziferase.de/issues/18",
     "category": "productivity",
     "price": "free",
     "modifiedCompatibility": [
@@ -15,6 +15,7 @@
     ],
     "require": {
         "composer/autoload": "^1.1.0",
-        "robinthehood/modified-std-module": "^0.1.0"
+        "robinthehood/modified-std-module": "^0.1.0",
+        "robinthehood/hook-point-manager": "^0.1.0"
     }
-}
+}                          
