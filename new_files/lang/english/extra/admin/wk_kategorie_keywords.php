@@ -10,6 +10,7 @@ define('MODULE_WK_KATEGORIE_KEYWORDS_TEXT_DESCRIPTION', '<br />Ist der Suchbegri
 define('MODULE_WK_KATEGORIE_KEYWORDS_TEXT_INFO', MODULE_WK_KATEGORIE_KEYWORDS_TEXT_DESCRIPTION);
 define('MODULE_WK_KATEGORIE_KEYWORDS_INCLUDE_TPL_MOD', '<br /><strong>Hinweis - F&uuml;r folgende Funktionen sind unten genannte Template Anpassungen notwendig:</strong><br />- Anpassung der &Uuml;berschrift im Kategorie Listing Suchergebnis zu "gefunden in folgenden Kategorien:"<br />- Anzeige des Suchergebnisses in der Vorschau der Autocomplete Suche<br />');
 define('MODULE_WK_KATEGORIE_KEYWORDS_INCLUDE_TPL_ORIG', '<br /><br />Die mit ** gekennzeichneten Dateien sind bereits passend modifiziert.<br />Die mit * gekennzeichneten Dateien liegen im Original vor und k&ouml;nnen mit dem Inhalt der modifizierten Versionen &uuml;berschrieben werden (alternativ: Umbenennen von Original und modifizierter Version). Anderenfalls sind die Anpassungen per Dateivergleich zu erg&auml;nzen:<br /> ');
+define('MODULE_WK_KATEGORIE_KEYWORDS_INCLUDE_TPL_NONE', '(Die mit *** gekennzeichneten Dateien sind nicht vorhanden und m&uuml;ssten f&uuml;r diese Templae erg&auml;nzt werden)<br />');
 
 define('MODULE_WK_KATEGORIE_KEYWORDS_STATUS_TITLE', 'Modul aktivieren?');
 define('MODULE_WK_KATEGORIE_KEYWORDS_STATUS_DESC', MODULE_WK_KATEGORIE_KEYWORDS_TEXT_DESCRIPTION);

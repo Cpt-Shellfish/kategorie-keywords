@@ -46,7 +46,7 @@ if(defined('MODULE_WK_KATEGORIE_KEYWORDS_STATUS')
         $where_str_cat .= " ) ";
         $listing_sql_categories = "Select * from ".TABLE_CATEGORIES." c LEFT JOIN ".TABLE_CATEGORIES_DESCRIPTION." cd on c.categories_id = cd.categories_id where $where_str_cat AND cd.language_id = '".(int)$_SESSION['languages_id']."'";
         $categories_query = xtc_db_query($listing_sql_categories);
-        $categories_keyword_content = array();   
+        $categories_keyword_content = array();     
         $arr_categories_affected = array();
         while ($categories = xtc_db_fetch_array($categories_query)) {
            if(!in_array($categories['categories_id'], $arr_categories_affected)){
