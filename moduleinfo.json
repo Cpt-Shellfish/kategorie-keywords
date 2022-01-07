@@ -11,7 +11,9 @@
     "category": "productivity",
     "price": "free",
     "modifiedCompatibility": [
-        "2.0.6.0"
+        "2.0.6.0",
+        "2.0.5.1",
+        "2.0.5.0"
     ],
     "require": {
         "composer/autoload": "^1.2.1",
