@@ -1,6 +1,6 @@
 <?php
 /* -----------------------------------------------------------------------------------------
-   Modul Kategorie-Keywords für modified eCommerce Shopsoftware 2.0.6.0     
+   Modul Kategorie-Keywords fÃ¼r modified eCommerce Shopsoftware 2.0.6.0     
    Autor: Daniel Lonn [www.webknecht.net]
    Released under the GNU General Public License
    ---------------------------------------------------------------------------------------*/
@@ -30,7 +30,7 @@ if(defined('MODULE_WK_KATEGORIE_KEYWORDS_STATUS')
               $where_str_cat .= "cd.categories_keywords LIKE ('%".$keyword."%') ";
               $where_str_cat .= $ent_keyword ? "OR cd.categories_keywords LIKE ('%".$ent_keyword."%') " : '';
               
-              if (MODULE_WK_KATEGORIE_KEYWORDS_INCLUDE_CATEGORIES == 'true') {
+              if (MODULE_WK_KATEGORIE_KEYWORDS_INCLUDE_CATEGORIES == 'true' && strlen($keyword) > 2) {
                  $where_str_cat .= "OR cd.categories_name LIKE ('%".$keyword."%') ";
                  $where_str_cat .= $ent_keyword ? "OR cd.categories_name LIKE ('%".$ent_keyword."%') " : '';
                  $where_str_cat .= "OR cd.categories_heading_title LIKE ('%".$keyword."%') ";
@@ -44,7 +44,7 @@ if(defined('MODULE_WK_KATEGORIE_KEYWORDS_STATUS')
       if($where_str_cat != " ( "){
         $where_str_cat = substr($where_str_cat, 0, strlen($where_str_cat)-3);
         $where_str_cat .= " ) ";
-        $listing_sql_categories = "Select * from ".TABLE_CATEGORIES." c LEFT JOIN ".TABLE_CATEGORIES_DESCRIPTION." cd on c.categories_id = cd.categories_id where $where_str_cat AND cd.language_id = '".(int)$_SESSION['languages_id']."'";
+        $listing_sql_categories = "Select * from ".TABLE_CATEGORIES." c LEFT JOIN ".TABLE_CATEGORIES_DESCRIPTION." cd on c.categories_id = cd.categories_id where $where_str_cat AND cd.language_id = '".(int)$_SESSION['languages_id']."' AND c.categories_status = '1' " .CATEGORIES_CONDITIONS_C;
         $categories_query = xtc_db_query($listing_sql_categories);
         $categories_keyword_content = array();     
         $arr_categories_affected = array();
